@@ -12,19 +12,19 @@
      <!-- links font and icon -->
      <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
-    <title>Home</title>
+     <title>Home</title>
     
     <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-            x.className += " responsive";
-            } else {
-            x.className = "topnav";
-            }
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
         }
-    </script>     
+    </script>   
 </head>
 
 <body class="grid-container">
@@ -33,44 +33,39 @@
 	
 	<h1 class="logo">Quin DeVries</h1>
 
-	<header class="header">
-		<nav>
-            <div class="topnav" id="myTopnav">
-                <a href="index.html" class="active">Home</a>
-                <a href="innovation_in_action.html">IIA</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="research.html">Research</a>
-                <a href="contact_me.html">Contact Me</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i>
-                </a>
-            </div>
-        </nav>    
-    </header>
+	<nav class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active">Home</a>
+            <a href="innovation_in_action.html">STRIDE</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="research.html">Research</a>
+            <a href="contact_me.html">Contact Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
 
 	<main class="grid-content">
         <p id="main" tabindex="-1"></p> 
-		<div class="title">
-			<h1 id="content">About Me</h1>
-        </div>
-        <div class="flip-card">
-                <div class="flip-card-inner">
-                  <div class="flip-card-front">
-                    <img class="home-pic"src= "images/quin.jpg" alt= "QD profile picture"> 
-                  </div>
-            <div class="flip-card-back">
-                <h1>Cyclone Fan</h1> 
-                <h1>Husker Fan</h1> 
-                <h1>Wolverine Fan</h1> 
+            <div class="title">
+                <h1 id="content">About Me</h1>
+            </div>
+            <div class="flip-card">
+                    <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img class="home-pic"src= "images/quin.jpg" alt= "QD profile picture"> 
+                    </div>
+                <div class="flip-card-back">
+                    <h1>Cyclone Fan</h1> 
+                    <h1>Husker Fan</h1> 
+                    <h1>Wolverine Fan</h1> 
+                    </div>
                 </div>
             </div>
-            </div>
 
-		
-		<article class="project"> <!--change class-->
+        <article class="project"> <!--change class-->
             
-            
-        
 			<section class="project-item">
 				<div class="project-text-right">
 					<p>I am Quin, as a first year masters at University of Michigan- Ann Arbor studying Information Science, 
@@ -87,12 +82,11 @@
 					<p>Thank you for your patience as I am releasing pages.</p><br>
 				</div>
 			</section>
-            <footer class="footer">        
-                <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
-            </footer>
         </article>
     </main>
-
+        <footer class="footer">        
+                <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
+        </footer>
+       
     </body>
-
 </html>

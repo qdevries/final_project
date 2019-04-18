@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links css -->
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+     <!-- links font and icon -->
+     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+     <title>STRIDE</title>
+    
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myLinks");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+    }
+    </script>     
+</head>
+
+<body class="grid-container">
+	
+    <a class="skip-main" href="#main">Skip to main content</a>
+	
+	<h1 class="logo">Quin DeVries</h1>
+
+	<nav class="header">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="innovation_in_action.html" class="active">STRIDE</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="research.html">Research</a>
+            <a href="contact_me.html">Contact Me</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+	<main class="grid-content">
+        <p id="main" tabindex="-1"></p> 
+            <div class="title">
+                <h1 id="content">STRIDE</h1>
+            </div>
+
+        <article class="project"> <!--change class-->
+            
+			<section class="project-item">
+				<div class="project-text-right">
+					<h2>The Problem Space</h2>
+                        <p>In 2018, there are 2 million people in the United States that are currently incarcerated. Of those 2 million 1,660,000 will return to prison within the next 5 years. However, if these individuals have access to the skill and knowledge to navigate technology, that number can be reduced by 43%. The Michigan Department of Corrections has recognized the need to include technology based education and has started to make a push to integrate it into prisons.</p> 
+                        <p>The largest barrier for returning citizens is knowledge of and an understanding of technology, especially to find gainful employment.</p><br>
+
+                    <h2>Data Synthesis</h2>
+                        <ul>Existing educational programs in prison are formal and structured, but this rigidity allows for new programs to enter the learning environment</ul>
+                        <ul>Tablets on restricted access servers are being introduced into prisons and as a result standardized test scores are improving</ul>
+                        <ul>Without knowledge of technology skills it is difficult to access online digital literacy education resources</ul>
+                        <ul>Upon release there are many barriers for reentering citizens that include things like signing up for food stamps, getting a state ID, etc. Due to the tangible and immediate outcomes of these task education becomes less salient. </ul>
+				</div>
+            </section>
+            
+        </article>
+        <div class="callout">
+                <div class="callout-header">Slide Deck</div>
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+                <div class="callout-container">
+                  <a href="https://drive.google.com/file/d/1YHLJokaCc-c8Y4mYLGQSGNNe5bAdMGXB/view?usp=sharingtarget=" target="_blank">Click here to see the slide deck</a>
+                    "</a> or click the "x" to close this window.</p>
+                </div>
+    </main>
+        <footer class="footer">        
+                <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
+        </footer>
+    </body>
+</html>

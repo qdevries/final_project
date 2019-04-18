@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- links css -->
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+     <!-- links font and icon -->
+     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
+
+    <title>Research</title>
+    
+    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
+    then the accordian
+    -->
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+            x.className += " responsive";
+            } else {
+            x.className = "topnav";
+            }
+        }
+
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function() {
+            /* Toggle between adding and removing the "active" class,
+            to highlight the button that controls the panel */
+            this.classList.toggle("active");
+
+            /* Toggle between hiding and showing the active panel */
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+            panel.style.display = "none";
+            } else {
+            panel.style.display = "block";
+            }
+        });
+    }
+    </script>     
+</head>
+
+<body class="grid-container">
+	
+    <a class="skip-main" href="#main">Skip to main content</a>
+	
+	<h1 class="logo">Quin DeVries</h1>
+
+	<header class="header">
+		<nav>
+            <div class="topnav" id="myTopnav">
+                <a href="index.html">Home</a>
+                <a href="innovation_in_action.html">STRIDE</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="research.html"class="active">Research</a>
+                <a href="contact_me.html">Contact Me</a>
+                
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </nav>    
+    </header>
+
+	<main class="grid-content">
+        <p id="main" tabindex="-1"></p> 
+		<div class="title">
+            <h1 id="content">Research</h1><br>
+            <h2>University of Michigan - Daly Research Lab</h2>
+            <h3>Design Thinking in Engineering</h3>
+		</div>
+		
+		<article class="project"> <!--change class-->
+            <img class="reserach_pic" src="images/dab_lab.jpg" alt="inter_rater_test">
+
+			<section class="project-item">
+				<div class="project-text-right">
+                    <p>I am currently a reserach assistant in the College of Engineering:</p><br>
+                    <p>Conducting user interviews to study front-end design practices and ideation. </p>
+                    <p>Comparing how design processes are being taught in engineering verses how they compare to the best practices in design.</p>
+                    <p>Analyzing previous user studies and quantitative research data to aid in the early stages of idea generation and concept selection.</p>
+                    <br>
+                    <b>Below you can find more infomration for Dr. Shanna Daly and Dr. Jin Woo Lee<b>
+				</div>
+            </section><br>
+        </article>
+
+    <!--accordion-->   
+        <button class="accordion">Shanna's Work</button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        
+        <button class="accordion">Jin's work </button>
+        <div class="panel">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+  
+    </main>
+        <footer class="footer">        
+                <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
+        </footer>
+    </body>
+</html>
