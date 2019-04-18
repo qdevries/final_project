@@ -125,11 +125,11 @@ fieldset {
 /* Change the color of links on hover */
 .topnav a:hover {
 	background-color: rgb(32, 187, 128);
-	color: black;
+	color: red;
 }
 
 /* Add an active class to highlight the current page */
-.active {
+.current {
 	background-color: #4CAF50;
 	color: white;
 }
