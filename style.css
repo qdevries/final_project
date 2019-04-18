@@ -62,7 +62,6 @@ a{
   overflow: hidden;
 }
 
-
 .accordion:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 13px;
@@ -74,7 +73,6 @@ a{
 .active:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
-
 
 /* ------ Form ------*/
 .errorMsg { 
@@ -146,7 +144,7 @@ fieldset {
   background-color: transparent;
   width: 500px;
   height: 500px;
-  border: 1px solid #aa1919;
+	border: 1px solid #aa1919;
 }
 
 /* This container is needed to position the front and back side */
@@ -175,7 +173,7 @@ fieldset {
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: #bbb;
-  color: black;
+	color: black;
 }
 
 /* Style the back side */
@@ -409,11 +407,8 @@ fieldset {
 	grid-template-rows: 72px auto 72px;
 	grid-template-areas: 
 		"logo header"
-		"sidebar content"
-		"sidebar footer"
+
 }
-
-
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
@@ -432,6 +427,7 @@ fieldset {
     right: 0;
 		top: 0;
 }		
+
 @media screen and (max-width: 600px) {
 .grid-container{
 	display:grid
@@ -439,3 +435,11 @@ fieldset {
 	grid-template-rows: 1fr, 3fr;}
 }
 
+
+@media screen and (max-width: 600px) {
+.flip-card-front {
+  background-color: #bbb;
+	color: black;
+	display:none;
+	}
+}
