@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
+<!doctype html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1">
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- links css -->
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- links font and icon -->
-    <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>Gallery</title>
-
-    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon -->
-    <script>    
+    
+     <!-- links font and icon -->
+     <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+     <title>Home</title>
+    
+    <!-- responsive nav -->
+    <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
         }
-    </script>
-</head>     <!-- end of head -->
+        </script>
+</head>
 
 <body>
     <a class="skip-main" href="#main">Skip to main content</a>
@@ -40,21 +38,25 @@
         <a href="innovation_in_action.html">STRIDE</a>
         <a href="gallery.html"class="active">Gallery</a>
         <a href="research.html">Research</a>
+        <a href="favTeams.html">favTeams</a>
+
         <a href="contact_me.html">Contact Me</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
+        <a href="javascript:void(0);" class="icon" onclick="resposiveNav()">
+                <i class="fa fa-bars"></i>
         </a>
     </div>
+
+
 	
-	<main class="content">
-		<div class="title">
+    <div class="title">
 			<h1 id="content">Gallery</h1>
 		</div>
 		<div class="gallery">
             </a>
 			<a class="gallery-item-b">
 				<img class="gallery-img" src="images/group_pic.jpg" alt="Place Holder">
-			</a>
+            </a>
+            
 			<a class="gallery-item-a">
 				<img class="gallery-img" src="images/contex_interview.jpg" alt="Place Holder">
 		

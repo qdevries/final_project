@@ -11,62 +11,65 @@
     
      <!-- links font and icon -->
      <link href="https://fonts.googleapis.com/css?family=Hind|Montserrat" rel="stylesheet">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
-
-    <title>Research</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+     <title>Home</title>
     
-    <!-- Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon
-    then the accordian
-    -->
+    <!-- responsive nav -->
     <script>
         function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
             x.className += " responsive";
-            } else {
+          } else {
             x.className = "topnav";
-            }
+          }
         }
 
+
+    //accordion//
         var acc = document.getElementsByClassName("accordion");
         var i;
 
         for (i = 0; i < acc.length; i++) {
         acc[i].addEventListener("click", function() {
-            /* Toggle between adding and removing the "active" class,
-            to highlight the button that controls the panel */
             this.classList.toggle("active");
-
-            /* Toggle between hiding and showing the active panel */
             var panel = this.nextElementSibling;
             if (panel.style.display === "block") {
-            panel.style.display = "none";
+            panel.style.display = "block";
             } else {
             panel.style.display = "block";
             }
-        });
-    }
-    </script>     
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
 </head>
 
 <body class="grid-container">
 	
-    <a class="skip-main" href="#main">Skip to main content</a>
-	
-	<h1 class="logo">Quin DeVries</h1>
-
-	<header class="header">
-		<nav>
+        <a class="skip-main" href="#main">Skip to main content</a>
+        
+        <h1 class="logo">Quin DeVries</h1>
+    
+        <nav class="header">
             <div class="topnav" id="myTopnav">
                 <a href="index.html">Home</a>
                 <a href="innovation_in_action.html">STRIDE</a>
                 <a href="gallery.html">Gallery</a>
                 <a href="research.html"class="active">Research</a>
                 <a href="contact_me.html">Contact Me</a>
-                
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <a href="javascript:void(0);" class="icon" onclick="resposiveNav()">
                     <i class="fa fa-bars"></i>
                 </a>
+            </div>
+        </nav>
             </div>
         </nav>    
     </header>
@@ -88,7 +91,7 @@
                     <p>Conducting user interviews to study front-end design practices and ideation. </p>
                     <p>Comparing how design processes are being taught in engineering verses how they compare to the best practices in design.</p>
                     <p>Analyzing previous user studies and quantitative research data to aid in the early stages of idea generation and concept selection.</p>
-                    <br>
+<br>
                     <b>Below you can find more infomration for Dr. Shanna Daly and Dr. Jin Woo Lee<b>
 				</div>
             </section><br>
