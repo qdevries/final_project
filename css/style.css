@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 html,body{
-	background-color:#d1dce3e4;
+	background-color:#ffffffe4;
 	height:100%;
 }
 
@@ -16,7 +16,7 @@ h1{
 
 h2{
     font-family: 'Hind', sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 h3{
@@ -24,15 +24,35 @@ h3{
 	font-size: 1em;
 	/*display: none;*/
 }
+
 p{
 	font-family: 'Hind', sans-serif;
 	font-size: 12pt;
+	color: black;
+}
+
+ul{
+	font-family: 'Hind', sans-serif;
+	font-size: 12pt;
+	font-weight: 200;
+	color: black;
+}
+
+li{
+	font-family: 'Hind', sans-serif;
+	font-size: 12pt;
 	font-weight: 100;
+	font-weight: 200;
 	color: black;
 }
 
 a{
-	color: purple;
+	color: black;
+}
+.footer{
+	color:black;
+	font-family: 'Hind', sans-serif;
+	font-size: 10pt;
 }
 
 /*------accordion------*/
@@ -106,6 +126,7 @@ fieldset {
 .topnav {
 	background-color: #2B5AB3;
 	overflow: hidden;
+
 }
 
 /* Style the links inside the navigation bar */
@@ -122,14 +143,14 @@ fieldset {
 
 /* Change the color of links on hover */
 .topnav a:hover {
-	background-color: rgb(32, 187, 128);
-	color: red;
+	background-color: rgb(80, 95, 233);
+	color: black;
 }
 
 /* Add an active class to highlight the current page */
 .current {
-	background-color: #4CAF50;
-	color: white;
+	background-color: rgb(16, 38, 79);
+	color: black;
 }
 
 /* Hide the link that should open and close the topnav on small screens */
@@ -141,10 +162,11 @@ fieldset {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  background-color: transparent;
-  width: 500px;
-  height: 500px;
-	border: 1px solid #aa1919;
+  background-color: black;
+  width: 300px;
+  height: 300px;
+	border: 1px solid black;
+	margin:0;
 }
 
 /* This container is needed to position the front and back side */
@@ -172,14 +194,14 @@ fieldset {
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
 	color: black;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: black;
+  background-color: black;
+  color: white;
   transform: rotateY(180deg);
 }
 
@@ -196,8 +218,8 @@ fieldset {
 }
 
 .skip-main:focus, a.skip-main:active {
-	color: #fff;
-	background-color:#000;
+	color: white;
+	background-color:black;
 	left: auto;
 	top: auto;
 	width: 30%;
@@ -230,35 +252,6 @@ fieldset {
 	padding: 16px;
 }
 
-/*---footer---    LOTS OF PROBLEMS WTIH THIS
-.footer{
-	background-color: #333;
-	color: #eeeeee;
-	border-top: 1px solid white;
-	grid-area: footer;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-	font-family: 'Montserrat', sans-serif;*/
-
-/*---header---
-.content{
-	grid-area: content;
-	grid-template-rows: 16px auto;
-	padding-left: 16px;
-	padding-right: 16px;
-	background-size: 8px;
-}
-
-.title{
-	grid-row-start: 1;
-	display: flex;
-	flex-direction: row;
-	justify-content: right;
-	align-items: center;
-	height: 1fr;
-}
-
 /*---callout---*/
 .callout {
   position: fixed;
@@ -270,7 +263,7 @@ fieldset {
 
 .callout-header {
   padding: 15px 15px;
-	background-color: #2B5AB3;
+	background-color: #274f9a;
   font-size: 30px;
 	color: white;
 }
@@ -295,7 +288,7 @@ fieldset {
 }
 
 /*---project---*/
-.project{
+.aProject{
 	grid-row-start: 2;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -307,33 +300,9 @@ fieldset {
 	
 }
 
-.project-item-title{
-	grid-row-start: 1;
-}
-
-.project-text-left{
-	grid-row-start: 2;
-	padding-right: 16px;
-}
-
-.project-text-right{
+.project-text{
 	grid-row-start: 2;
 	padding-left: 16px;
-}
-
-.project-text-left-split{
-	grid-row-start: 2;
-	padding-right: 16px;
-	display: grid;
-	grid-template-columns: 40% 60%;
-	
-}
-
-.project-text-right-split{
-	grid-row-start: 2;
-	padding-left: 16px;
-	display: grid;
-	grid-template-columns: 40% 60%;
 }
 
 .project-img{
@@ -343,17 +312,15 @@ fieldset {
 .gallery{
 	grid-row-start: 2;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows:  auto auto;
+	grid-template-rows: auto auto;
 	justify-items: center;
 	align-items: center;
-	grid-gap: 32px;
+	grid-gap: 35px;
 }
 
 .gallery-item-a{
 	grid-column: 1/2;
 	grid-row: 1/2;
-	max-width: 100%
 }
 
 .gallery-item-b{
@@ -384,7 +351,6 @@ fieldset {
 .gallery-item-g{
 	grid-column-start: 1/2;
 	grid-row: 3/4;
-	max-width: 100%
 }
 
 .gallery-item-h{
@@ -392,22 +358,12 @@ fieldset {
 	grid-row: 3/4;
 }
 
-.gallery-item-i{
-	grid-column-start: 4/4;
-	grid-row: 3/4;
-}
-
-.gallery-img{
-	max-width: 100%
-}
-
 .main-grid{
 	display: grid;
-	grid-template-columns: 216px auto;
-	grid-template-rows: 72px auto 72px;
+	grid-template-columns: 200px auto;
+	grid-template-rows: 76px auto 76px;
 	grid-template-areas: 
 		"logo header"
-
 }
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
@@ -431,10 +387,8 @@ fieldset {
 @media screen and (max-width: 600px) {
 .grid-container{
 	display:grid
-	grid-template-columns: 2fr, 1 fr;
 	grid-template-rows: 1fr, 3fr;}
 }
-
 
 @media screen and (max-width: 600px) {
 .flip-card-front {
