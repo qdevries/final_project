@@ -24,24 +24,26 @@
             x.className = "topnav";
           }
         }
+    
+    //------form validation but used <required> instead -------//
 
-    function valForm() {
-        document.getElementById("nameError").style.display = "none";
-        document.getElementById("emailError").style.display = "none";
-        if (document.getElementById("name").value == "" && document.getElementById("email").value == "") {
-            document.getElementById("nameError").style.display = "block";
-            document.getElementById("emailError").style.display = "block";
-            return false;
-        }
-        if (document.getElementById("name").value == "") {
-            document.getElementById("nameError").style.display = "block";
-            return false;
-        }
-        if (document.getElementById("email").value == "") {
-            document.getElementById("emailError").style.display = "block";
-            return false;
-        }
-    }   
+    // function valForm() {
+    //     document.getElementById("nameError").style.display = "none";
+    //     document.getElementById("emailError").style.display = "none";
+    //     if (document.getElementById("name").value == "" && document.getElementById("email").value == "") {
+    //         document.getElementById("nameError").style.display = "block";
+    //         document.getElementById("emailError").style.display = "block";
+    //         return false;
+    //     }
+    //     if (document.getElementById("name").value == "") {
+    //         document.getElementById("nameError").style.display = "block";
+    //         return false;
+    //     }
+    //     if (document.getElementById("email").value == "") {
+    //         document.getElementById("emailError").style.display = "block";
+    //         return false;
+    //     }
+    // }   
 
     var i = 0;
     var txt = 'Thank you for coming.';
@@ -52,7 +54,7 @@
         document.getElementById("demo").innerHTML += txt.charAt(i);
         i++;
         setTimeout(typeWriter, speed);
-    }
+     }
     }
     </script>
 
@@ -88,21 +90,21 @@
         
         <body onload = "typeWriter()">
             <p id="demo"></p>
-            
 
             <article class="form-project"> <!--change class-->
-                <form action="https://formspree.io/qdevries@umich.edu" method="POST">
+                    <form action="https://formspree.io/qdevries@umich.edu" method="POST;">
+                    
                 <fieldset>
                         <label for="name">Full Name: </label>
-                        <input type="text" name="fullname" id="name"><br>
+                        <input type="text" name="fullname" id="name"required><br>
                         <p class="errorMsg" id="nameError">Please enter your name above</p><br>
             
                         <label for ="emailaddr">Email</label>
-                        <input type="text" name="email" id="email"><br>
+                        <input type="text" name="email" id="email" required><br>
                         <p class="errorMsg" id="emailError">Please enter a valid address</p><br>
 
                         <label for ="phone">Phone Number</label>
-                        <input type="text" name="phone" id="phone"><br>
+                        <input type="text" name="phone" id="phone" required><br>
                         <p class="errorMsg" id="phoneError">Please enter a valid address</p><br>
 
                         <em>When you submit you will be taken back to the home screen</em><br>
@@ -110,6 +112,7 @@
                     </fieldset><br>
                     </form>
             </article>
+
         </main>
         <footer class="footer">        
             <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
