@@ -44,17 +44,19 @@
     }   
 
     var i = 0;
-var txt = 'Lorem ipsum dummy text blabla.';
-var speed = 50;
+    var txt = 'Thank you for coming.';
+    var speed = 50;
 
-function typeWriter() {
-  if (i < txt.length) {
-    document.getElementById("demo").innerHTML += txt.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+    function typeWriter() {
+    if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+    }
+    }
     </script>
+
+
 </head>
 
 <body class="grid-container">
@@ -81,35 +83,34 @@ function typeWriter() {
 	<main class="grid-content">
         <p id="main" tabindex="-1"></p> 
 		<div class="title">
-            <h1 id="content">Contact Me</h1><br>
+            <h1 id="content">How can I get a hold of you?</h1><br>
         </div>
         
         <body onload = "typeWriter()">
+            <p id="demo"></p>
+            
 
             <article class="form-project"> <!--change class-->
                 <form action="index.html" onsubmit="return valForm();">
                     <fieldset>
-                        <h2>How can I get a hold of you?</h2>
                         <label for="name">Full Name: </label>
                         <input type="text" name="fullname" id="name"><br>
                         <p class="errorMsg" id="nameError">Please enter your name above</p><br>
             
-                        <label for ="emailaddr"></label>
-                        Email Address:
+                        <label for ="emailaddr">Email</label>
                         <input type="text" name="email" id="email"><br>
                         <p class="errorMsg" id="emailError">Please enter a valid address</p><br>
 
-                        <label for ="phone"></label>
-                        Phone Number:
+                        <label for ="phone">Phone Number</label>
                         <input type="text" name="phone" id="phone"><br>
                         <p class="errorMsg" id="phoneError">Please enter a valid address</p><br>
+
                         <em>When you submit you will be taken back to the home screen</em><br>
                         <input type="submit" value="Submit"> 
                     </fieldset><br>
                     </form>
             </article>
         </main>
-
         <footer class="footer">        
             <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
         </footer>
