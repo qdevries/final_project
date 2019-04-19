@@ -297,7 +297,7 @@ fieldset {
 
 /*---project---*/
 .project{
-	grid-row-start: 2;
+	grid-row-start: 1;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 }
