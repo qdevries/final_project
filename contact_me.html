@@ -40,7 +40,19 @@
         if (document.getElementById("email").value == "") {
             document.getElementById("emailError").style.display = "block";
             return false;
-    }
+        }
+    }   
+
+    var i = 0;
+var txt = 'Lorem ipsum dummy text blabla.';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
 }
     </script>
 </head>
@@ -54,11 +66,11 @@
 	<header class="header">
 		<nav>
             <div class="topnav" id="myTopnav">
-                <a href="index.html">Home</a>
-                <a href="innovation_in_action.html">STRIDE</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="research.html">Research</a>
                 <a href="contact_me.html"class="current">Contact Me</a>
+                <a href="research.html">Research</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="innovation_in_action.html">STRIDE</a>
+                <a href="index.html">Home</a>
                 <a href="javascript:void(0);" class="icon" onclick="resposiveNav()">
                     <i class="fa fa-bars"></i>
                 </a>
@@ -70,10 +82,12 @@
         <p id="main" tabindex="-1"></p> 
 		<div class="title">
             <h1 id="content">Contact Me</h1><br>
-		</div>
-		
-		<article class="form-project"> <!--change class-->
-            <form action="index.html" onsubmit="return valForm();">
+        </div>
+        
+        <body onload = "typeWriter()">
+
+            <article class="form-project"> <!--change class-->
+                <form action="index.html" onsubmit="return valForm();">
                     <fieldset>
                         <h2>How can I get a hold of you?</h2>
                         <label for="name">Full Name: </label>
@@ -92,9 +106,9 @@
                         <em>When you submit you will be taken back to the home screen</em><br>
                         <input type="submit" value="Submit"> 
                     </fieldset><br>
-                </form>
-        </article>
-    </main>
+                    </form>
+            </article>
+        </main>
 
         <footer class="footer">        
             <i class="fas fa-pencil-ruler"></i> crafted by &copy; 2019 by Quin DeVries</div>
